@@ -1,0 +1,9 @@
+var fs = require('fs');
+
+var data = "add,3,4";
+var res = data.split(",");
+fs.writeFile('temp.txt', res, function(err, res){
+    if (err) console.log(err);
+    console.log("Successfully Written to File.");
+});
+
