@@ -7,12 +7,9 @@ fs.readFile('students.txt', function(err, data) {
        totalmarks + currentstudent.marks, // reducer function 
        0   // initial accumulator value
     ); 
-       
-      console.log("average of marks: " + totalmarks);
-   //  Var student_marks = student.map(function(student, index, array) {
-     //       Return student.marks;
-   // });
-          
-});
+      
+      console.log("sum of marks: " + totalmarks); 
+      console.log("average of marks: " + totalmarks/student.length);
+ });
 
 console.log('This is after the read call');
